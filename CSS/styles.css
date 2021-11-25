@@ -1210,5 +1210,47 @@
         width: calc(100% / 12 * 12 - 30px);
     
     }
+    .contact-section{
 
+        top: -30px;
+        right: 0;
+    }
+    .wrapper-1{
+
+        padding: 50px 90px 50px 90px;
+    }
+    .my-info-section{
+
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .info-div{
+
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .my-skills-title{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .my-skills{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0px;
+        margin-right: -25px;
+    }
+    .project-price{
+
+        margin-top: 50px;
+    }
 }
