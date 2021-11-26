@@ -1257,9 +1257,17 @@
 
 
 
-@media screen and (max-width: 830) {
+@media screen and (max-width: 830px) {
+   
+    .wrapper-1 {
 
-    .wrapper-1{
-        padding: 10px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .contact-section{
+
+        top: -30px;
+        right: 40px;
     }
 }
