@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="X-UA-Compatible">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,170 +11,171 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./CSS/styles.css" type="text/css">
-    <link rel="stylesheet" href="./CSS/reset.css">
-
-    <meta name="viewport" content="width=device-width">
-    
-
 </head>
 
 
 <body class="head-body">
-
-    <div class="wrapper-1">
-
-        <div class="wrapper">
-
-            <!-- Contacts section -->
-
-            <section class="contact-section">
-
-                <a href="https://t.me/AndriiNahornyi" class="telegram-link">
-                    <img src="./img/icons/telegram-icon.svg" alt="telegram link" class="telegram">
-                </a>
-
-                <a href="tel:380932501158" сlass="phone-icon-link">
-                    <img src="./img/icons/phone-icon.svg" alt="phone" class="phone-icon">
-                </a>
-
-                <a href="viber://chat?number=380932501158" class="viber-link"> 
-                    <img src="./img/icons/viber-icon.svg" alt="viber link" class="viber">
-                </a>
-
-                <a href="tel:380932501158" class="phone-number-link">
-                    +38(093) 250-11-58
-                </a>
-            </section>
-
-            
-            <!-- Experience section -->
-
-            <section class="experience section-all">
-
-                <img src="./img/My photo.jpg" width="265" height="265" alt="My photo" class="my-photo">
-
-                <div class="linkedin-facebook-icons">
-
-                    <a href="https://www.linkedin.com/" class="linkedin-link">
-
-                        <img src="./img/icons/linkedin-icon.svg" alt="linkedin" class="icon-linkedin">
-
+   
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <ul class="list header-list">
+                <li class="item">
+                    <a href="" class="link">
+                        <svg class="icon" width="24" height="24">
+                            <use href="./img/icons-svg.svg#icon-whatsapp"></use>
+                        </svg>
                     </a>
-
-                    <a href="https://uk-ua.facebook.com/">
-
-                        <img src="./img/icons/fb-icon.svg" alt="facebook" class="icon-facebook">
-
+                </li>
+                <li class="item">
+                    <a href="" class="link">
+                        <svg class="icon" width="24" height="24">
+                            <use href="./img/icons-svg.svg#icon-telegram"></use>
+                        </svg>
                     </a>
+                </li>
+                <li class="item">
+                    <a href="" class="link">
+                        <svg class="icon" width="24" height="24">
+                            <use href="./img/icons-svg.svg#icon-viber"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="" class="link link-phone">
+                        <svg class="icon" width="24" height="24">
+                            <use href="./img/icons-svg.svg#icon-phone"></use>
+                        </svg>
+                        <p class="text">+38(093) 250-11-58</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
 
-                </div>
+    <div class="wrapper">
+        <!-- Experience section -->
+        <section class="section">
+            <img src="./img/my-photo.jpg" width="300" height="300" alt="моє фото" class="my-photo">
 
-                <div class="experience-description">
-                    <p class="experience-description-text experience-description-text-first">32 готових проекта</p> 
-                    <p class="experience-description-text">2 роки досвіду</p>
+            <ul class="list fbandin-list">
+                <li class="item"> 
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="link">
+                        <svg class="icon" width="24" height="24">
+                            <use href="./img/icons-svg.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="https://uk-ua.facebook.com/" target="_blank" rel="noopener noreferrer" class="link">
+                        <svg class="icon" width="24" height="24">
+                            <use href="./img/icons-svg.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
 
-                </div>
+            <div class="experience-description">
+                <p class="text">32 готових проекта</p> 
+                <p class="text">2 роки досвіду</p>
+            </div>
 
-                <div class="technologies-icon">
+            <ul class="list technologies-list">
+                <li class="item">
+                    <svg class="icon" width="24" height="24">
+                        <use href="./img/icons-svg.svg#icon-javascript"></use>
+                    </svg>
+                </li>
+                <li class="item">
+                    <svg class="icon" width="24" height="24">
+                        <use href="./img/icons-svg.svg#icon-react"></use>
+                    </svg>
+                </li>
+                <li class="item">
+                    <svg class="icon" width="24" height="24">
+                        <use href="./img/icons-svg.svg#icon-nodejs"></use>
+                    </svg>
+                </li>
+            </ul>
 
-                    <img src="./img/icons/js-icon.svg" alt="Javasript" class="js-icon">
-                    <img src= "./img/icons/react-icon.svg" alt="React" class="react-icon">
-                    <img src="./img/icons/nodejs-icon.svg" alt="Nodejs" class="nodejs-icon">
-
-                </div>
-
-                <a class="my-projects-link" href="https://naughty-saha-c136a2.netlify.app/"> Мої роботи </a>
-            
-            </section>
+            <a class="link myprojects-link" href="https://naughty-saha-c136a2.netlify.app/"
+                >Мої роботи
+            </a>
+          
+        </section>
 
 
-            <!-- My info section -->
+        <!-- My info section -->
 
-            <section class="my-info-section section-all">
-
+        <section class="section">
+            <div class="">
                 <div class="info-div">
-
+                    <p class="text"> Привіт! Я - Andrii Nahornyi </p>
+        
+                    <h1 class="title main-title"> Я роблю  сайти</h1>
                     
-                    <h2 class="my-info-section-h2"> Привіт! Я - Andrii Nahornyi </h2>
-
-                    <h1 class="my-info-section-h1"> Я роблю <dr class="my-info-section-h1-site"> сайти </dr> </h1>
-                   
-
-                    <h3 class="my-info-section-h3"> Проживаю в Вінниці</h3>
-
-
-                    <h4 class="my-info-section-h4"> Працюю  дистанційно</h4>
-
-
-                    <p class="my-description">  Я - людина-оркестр.
-
-                        <span class="whole-description-1"> Самотужки замінюю <dr class="whole-description">цілу веб-студію.</span>
-                        </dr>
+                    <p class="text"> Проживаю в Вінниці</p>
+        
+                    <p class="text"> Працюю  дистанційно</p>
+        
+                    <p class="text"
+                        >Я - людина-оркестр. Самотужки замінюю цілу веб-студію.
                     </p>
                 </div>
-
-
+        
                 <div class="skills-tittle-div">
                     <p class="my-skills-title"> Вмію </p>
-
-
-
                     <ul class="my-skills">
-
-
                         <li class="my-skills-item"> 
-
                             <p class="my-skills-text"> Керувати IT-проектами і командами; </p>
                         </li>
-
+        
                         <li class="my-skills-item"> 
-
                             <p class="my-skills-text"> Senior Front End розробник; </p>
                         </li>
-
+        
                         <li class="my-skills-item">
-
                             <p class="my-skills-text"> Middle Back End розробник; </p>
                         </li>
-
+        
                         <li class="my-skills-item">
-
                             <p class="my-skills-text"> Можу проконтрулювати якість особистого чи <dr class="text-skills00"> вашого проекта, як QA - спеціаліст. </dr>
                             </p>
                         </li>
-
                     </ul>
                 </div>
+            </div>
 
-            </section>
-
-
-            <!-- Project price -->
+        </section>
 
 
-            <section class="project-price section-all">
-
-        
-                <form action="#" class="project-price-form" method="POST" name="Підрахунок проекту" data-netlify="true" id="project-price-form">
-                    
-                    <h5 class="project-price-text"> Розрахуй вартість проекту</h5>
-
-                    
-                    <div class="project-type-conainer">
-
-                        <label for="project-price-form-select" class="project-price-form-file-title"> Тип сайту </label>
-
-                        <select name="Project type" id="project-price-form-select" class="select">
-                            <option selected value="landing-page"> Landing page </option>
-                            <option value="online-store"> Online Store </option>
-                            <option value="web-application"> Web Application </option>
-                            <option value="mobile-application"> Mobile Application </option>
-                        </select>
+                <!-- Project price -->
 
 
-                    <div class="checkbox-box">
-                        <p class="project-price-form-file-title"> Типи роботи </p> 
+                <section class="section">
+
+            
+                    <form action="#" class="project-price-form" method="POST" name="Підрахунок проекту" data-netlify="true" id="project-price-form">
+                        
+                        <h5 class="project-price-text"> Розрахуй вартість проекту</h5>
+
+                        
+                        <div class="project-type-conainer">
+
+                            <label for="project-price-form-select" class="project-price-form-file-title"> Тип сайту </label>
+
+                            <select name="Project type" id="project-price-form-select" class="select">
+                                <option selected value="landing-page"> Landing page </option>
+                                <option value="online-store"> Online Store </option>
+                                <option value="web-application"> Web Application </option>
+                                <option value="mobile-application"> Mobile Application </option>
+                            </select>
+                        </div>
+
+                        <div class="checkbox-box">
+                            <p class="project-price-form-file-title"> Типи роботи </p> 
 
                             <div class="checkbox-label-project-managment">
                                 <input type="checkbox" name="Project Managment" id="project-managment" class="input-checkbox">
@@ -195,26 +196,24 @@
                                 <input type="checkbox" name="QA" id="qa" class="input-checkbox">
                                 <label for="qa" class="label-qa"> QA </label>
                             </div>
-                    </div>
+                        </div>
 
-                    <p class="price"> Ціна </p>
-                    <p class="currency"> <span class="usd"> $ </span> <span id="total-price"> 0</span> </p>
+                        <p class="price"> Ціна </p>
+                        <p class="currency"> <span class="usd"> $ </span> <span id="total-price"> 0</span> </p>
 
 
-                    <input type="hidden" name="Email">
+                        <input type="hidden" name="Email">
 
-                    <div class="formElemet-container">
+                        <div class="formElemet-container">
 
-                        <button class="button-send">Відправти <span class="button-send-text"> запит </span> </button>
-                    </div>
+                            <button class="button-send">Відправти <span class="button-send-text"> запит </span> </button>
+                        </div>
 
-                </form>
+                    </form>
 
-            </section>
-
-        </div>
-
+                </section>
     </div>
+   
         
 
         <!-- Model -->
@@ -268,12 +267,7 @@
 
         </div>
 
-     <script src="./js/sript.js">
-
-
-     </script>
-
-
+<script src="./js/sript.js"></script>
 </body>
 
 </html>

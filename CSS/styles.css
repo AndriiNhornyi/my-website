@@ -1,184 +1,146 @@
-.head-body{
+:root{
+    --text-color: #ffffff;
+    --accent-color: #cccc00;
 
-    background-color:  #F2DFD3;
+}
+
+.head-body{
+    background-color: #000000;
     font-family: 'Montserrat', sans-serif;
 }
 
-.wrapper-1{
-
-    max-width: 1413px;
-    margin: 0px auto;
-    padding: 164px 254px 135px 192px;
-}
-
-
-.wrapper{
-    
+.wrapper {
+    width: 1200px;
     display: flex;
-    flex-wrap: wrap;
-    margin: 0 -15px;
-    position: relative;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-
-.section-all{
-    width: calc(100% / 12 * 4 - 30px);
-    margin: 15px;
-    box-sizing: border-box;
+.wrapper .section + .section {
+    margin-left: 40px;
 }
 
-
-
-/* Contacts section */
-
-.contact-section{
-
-    position: absolute;
-    top: -24px;
-    right: 56px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.title {
+    color: var(--text-color);
+    font-weight: 700;
+    margin: 0px;
 }
 
-
-.telegram-link{
-
-    text-decoration: none;
-    color: #000000;
-}
-
-
-.viber-link{
-
-    text-decoration: none;
-    color: #000000;
-}
-
-
-.phone-icon-link{
-
-    text-decoration: none;
-    color: #000000;
-}
-
-
-.telegram{
-
-    margin-right: 28px;
-    color: #000000;
-}
-
-
-.viber{
-
-    margin-right: 28px;
-    color: #000000;
-}
-
-
-.phone-icon{
-
-    margin-right: 28px;
-    text-decoration: none;
-    color: #000000;
-}
-
-
-.phone-number-link{
-
-    font-weight: bold;
+.link {
     font-size: 16px;
-    line-height: 24px;
-    color: #000000;;
+    line-height: 1.5;
     text-decoration: none;
 }
 
-
-
-/* Experience section*/
-
-.experience{
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.list {
+    list-style: none;
+    margin: 0px;
+    padding-left: 0px;
 }
 
+.text {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0px;
+}
 
+/* ________________________HEADER */
+.header-content{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 121px;
+}
 
-.my-photo{
+.header-list,
+.link-phone {
+    display: flex;
+}
 
-    margin-bottom: 55px;
+.header-list {
+    justify-content: end;
+}
+
+.link-phone .text{
+    align-self: center;
+    margin-left: 5px;
+}
+
+.header-list .item:not(:nth-child(n + 3)) {
+    margin-right: 15px;
+}
+
+.header-list .item:nth-child(3n) {
+    margin-right: 113px;
+}
+
+/* ______________________Experience section*/
+.my-photo {
+    margin-bottom: 35px;
     border-radius: 100%;
 }
 
+.fbandin-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+}
 
-.icon-linkedin{
+.fbandin-list .link {
+    display: block;
+    border-radius: 50%;
+    padding: 10px;
+}
 
-    margin-right: 28px;
+.fbandin-list .link:hover,
+.fbandin-list .link:focus {
+    background-color: var(--accent-color);
 }
 
 
-.experience-description{
-
-    margin-top: 55px;
-    margin-bottom: 55px;
-}
-
-
-.experience-description-text{
-
-    text-align: center;
-    font-size: 16px;
-    line-height: 24px;
-    color: #4F4F4F;
-}
-
-
-.experience-description-text-first{
-
-    margin-bottom: 8px;
-}
-
-
-.technologies-icon{
-
-    margin-bottom: 55px;
-}
-
-
-.js-icon{
-
-    margin-right: 28px;
-}
-
-
-.nodejs-icon{
-
+.fbandin-list .item + .item {
     margin-left: 28px;
 }
 
-
-.my-projects-link{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    color: #F60C36;
-    text-decoration-line: underline;
+.fbandin-list .icon {
+    display: block;
 }
 
+.experience-description {
+    margin-bottom: 45px;
+}
 
-.linkedin-link{
+.experience-description .text {
+    text-align: center;
+}
 
-    text-decoration: none;
+.technologies-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.technologies-list .item + .item {
+    margin-left: 40px;
+}
+
+.myprojects-link{
+    display: flex;
+    justify-content: center;
+}
+
+.myprojects-link:hover,
+.myprojects-link:focus {
+    color: #F60C36;
+    text-decoration: underline;
 }
 
 
 /* My info section */
 
-.my-info-section{
+.myinfo-section{
 
     display: flex;
     flex-direction: column;
@@ -633,658 +595,4 @@
 .smile-icon{
 
     margin-top: 180px;
-}
-
-
-/* Adaptive layout */
-
-@media screen and (max-width: 1850px) {
-
-    .contact-section {
-
-        top: -24px;
-        right: 54px;
-    }
-}
-
-
-@media screen and (max-width: 1845px) {
-
-    .contact-section {
-
-        right: 52px;
-    }
-}
-
-
-@media screen and (max-width: 1840px) {
-
-    .contact-section {
-
-        right: 50px;
-    }
-}
-
-
-@media screen and (max-width: 1820px) {
-
-    .contact-section {
-
-        right: 48px;
-    }
-    .text-skills00{
-        display: inline-flex;
-    }
-}
-
-
-@media screen and (max-width: 1800px) {
-
-    .contact-section {
-
-        right: 46px;
-    }
-}
-
-
-@media screen and (max-width: 1790px) {
-
-    .wrapper-1{
-
-        padding: 164px 180px 100px 180px;
-    }
-
-    .contact-section {
-
-        right: 56px;
-    }
-}
-
-
-@media screen and (max-width: 1780px) {
-
-    .contact-section {
-
-        right: 58px;
-    }
-}
-
-
-@media screen and (max-width: 1771px) {
-
-    .contact-section {
-
-        right: 56px;
-    }
-    
-    .text-skills00{
-        display: inline-flex;
-    }
-}
-
-
-@media screen and (max-width: 1760px) {
-
-    .contact-section {
-
-        right: 54px;
-    }
-}
-
-
-@media screen and (max-width: 1745px) {
-
-    .contact-section {
-
-        right: 51px;
-    }
-}
-
-
-@media screen and (max-width: 1735px) {
-
-    .contact-section {
-
-        right: 50px;
-    }
-}
-
-
-@media screen and (max-width: 1730px) {
-
-    .contact-section {
-
-        right: 47px;
-    }
-}
-
-
-@media screen and (max-width: 1720px) {
-
-    .contact-section {
-
-        right: 45px;
-    }
-}
-
-
-@media screen and (max-width: 1715px) {
-
-    .contact-section {
-
-        right: 44px;
-    }
-}
-
-
-@media screen and (max-width: 1700px) {
-
-    .contact-section {
-
-        right: 56px;
-    }
-    .wrapper-1{
-
-        padding: 100px 0px 100px 0px;
-    }
-}
-
-
-@media screen and (max-width: 1400px) {
-
-    .contact-section {
-
-        right: 54px;
-    }
-    .wrapper-1{
-
-        padding: 90px 0px 90px 0px;
-    }
-}
-
-@media screen and (max-width: 1390px) {
-
-    .contact-section {
-
-        right: 53px;
-    }
-}
-
-
-@media screen and (max-width: 1380px) {
-
-    .contact-section {
-
-        right: 51px;
-    }
-}
-
-
-@media screen and (max-width: 1370px) {
-
-    .contact-section {
-
-        right: 48px;
-    }
-}
-
-
-@media screen and (max-width: 1360px) {
-
-    .contact-section {
-
-        right: 46px;
-    }
-}
-
-
-@media screen and (max-width: 1340px) {
-
-    .contact-section {
-
-        right: 44px;
-    }
-}
-
-
-@media screen and (max-width: 1330px) {
-
-    .contact-section {
-
-        right: 42px;
-    }
-}
-
-
-@media screen and (max-width: 1310px) {
-
-    .contact-section {
-
-        right: 40px;
-    }
-}
-
-
-@media screen and (max-width: 1300px) {
-
-    .contact-section {
-
-        right: 36px;
-    }
-}
-
-
-@media screen and (max-width: 1290px) {
-
-    .contact-section {
-
-        right: 34px;
-    }
-}
-
-
-@media screen and (max-width: 1280px) {
-
-    .contact-section {
-
-        right: 32px;
-    }
-}
-
-
-@media screen and (max-width: 1280px) {
-
-    .contact-section {
-
-        right: 28px;
-    }
-}
-
-
-@media screen and (max-width: 1260px) {
-    
-    .section-all {
-
-        width: calc(100% / 12 * 6 - 30px);
-    
-    }
-   .my-info-section{
-
-        margin-left: 15px;
-   }
-
-   .wrapper-1{
-
-    padding: 0px 90px 0px 90px;
-    }
-
-    .contact-section {
-
-        top: 1330px;
-        right: 394px;
-    }
-
-    .project-price{
-
-        width: calc(100% / 12 * 12 - 30px);
-    }
-}
-
-
-
-@media screen and (max-width: 1250px) {
-
-    .contact-section {
-
-        right: 390px;
-    }
-}
-
-
-@media screen and (max-width: 1240px) {
-
-    .contact-section {
-
-        right: 386px;
-    }
-}
-
-
-@media screen and (max-width: 1230px) {
-
-    .contact-section {
-
-        right: 382px;
-    }
-}
-
-
-@media screen and (max-width: 1220px) {
-
-    .contact-section {
-
-        right: 378px;
-    }
-}
-
-
-@media screen and (max-width: 1210px) {
-
-    .contact-section {
-
-        right: 374px;
-    }
-}
-
-
-@media screen and (max-width: 1200px) {
-
-    .contact-section {
-
-        right: 370px;
-    }
-}
-
-
-@media screen and (max-width: 1190px) {
-
-    .contact-section {
-
-        right: 366px;
-    }
-}
-
-
-@media screen and (max-width: 1180px) {
-
-    .contact-section {
-
-        right: 362px;
-    }
-}
-
-
-@media screen and (max-width: 1170px) {
-
-    .contact-section {
-
-        right: 358px;
-    }
-}
-
-
-@media screen and (max-width: 1168px) {
-
-    .contact-section {
-
-        top: 1350px;
-    }
-}
-
-
-@media screen and (max-width: 1160px) {
-
-    .contact-section {
-
-        right: 352px;
-    }
-}
-
-
-@media screen and (max-width: 1150px) {
-
-    .contact-section {
-
-        right: 348px;
-    }
-}
-
-
-@media screen and (max-width: 1140px) {
-
-    .contact-section {
-
-        right: 346px;
-    }
-}
-
-
-@media screen and (max-width: 1130px) {
-
-    .contact-section {
-
-        right: 342px;
-    }
-}
-
-
-@media screen and (max-width: 1120px) {
-
-    .contact-section {
-
-        right: 338px;
-    }
-}
-
-
-@media screen and (max-width: 1120px) {
-
-    .contact-section {
-
-        right: 334px;
-    }
-}
-
-
-@media screen and (max-width: 1110px) {
-
-    .contact-section {
-
-        right: 330px;
-    }
-}
-
-
-@media screen and (max-width: 1100px) {
-
-    .contact-section {
-
-        right: 326px;
-    }
-}
-
-
-@media screen and (max-width: 1090px) {
-
-    .contact-section {
-
-        right: 322px;
-    }
-}
-
-
-@media screen and (max-width: 1080px) {
-
-    .contact-section {
-
-        right: 318px;
-    }
-}
-
-
-@media screen and (max-width: 1080px) {
-
-    .contact-section {
-
-        right: 314px;
-    }
-}
-
-
-@media screen and (max-width: 1070px) {
-
-    .contact-section {
-
-        right: 310px;
-    }
-}
-
-
-@media screen and (max-width: 1060px) {
-
-    .contact-section {
-
-        right: 302px;
-    }
-}
-
-
-@media screen and (max-width: 1050px) {
-
-    .contact-section {
-
-        right: 298px;
-    }
-}
-
-
-@media screen and (max-width: 1040px) {
-
-    .contact-section {
-
-        right: 294px;
-    }
-}
-
-
-@media screen and (max-width: 1030px) {
-
-    .contact-section {
-
-        right: 286px;
-    }
-}
-
-
-@media screen and (max-width: 1020px) {
-
-    .contact-section {
-
-        right: 282px;
-    }
-}
-
-
-@media screen and (max-width: 1010px) {
-
-    .contact-section {
-
-        right: 278px;
-    }
-}
-
-
-@media screen and (max-width: 1004px) {
-
-    .contact-section {
-
-        top: 658px;
-        right: 480px;    
-    }
-}
-
-
-@media screen and (max-width: 1000px) {
-
-    .contact-section {
-
-        right: 476px;    
-    }
-}
-
-
-@media screen and (max-width: 996px) {
-
-    .section-all {
-
-        width: calc(100% / 12 * 12 - 30px);
-    
-    }
-    .contact-section{
-
-        top: -30px;
-        right: 0;
-    }
-    .wrapper-1{
-
-        padding: 50px 90px 50px 90px;
-    }
-    .my-info-section{
-
-        align-items: center;
-        justify-content: center;
-        margin-top: 50px;
-    }
-    .info-div{
-
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-    }
-    .my-skills-title{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-    }
-    .my-skills{
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-left: 0px;
-        margin-right: -25px;
-    }
-    .project-price{
-
-        margin-top: 50px;
-    }
-}
-
-
-@media screen and (max-width: 830px) {
-   
-    .wrapper-1 {
-
-        padding-right: 0px;
-        padding-left: 0px;
-    }
-
-    .contact-section{
-
-        top: -30px;
-        right: 40px;
-    }
-}
-
-
-@media screen and (max-width: 705px) {
-
-    .text-skills00{
-
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .section-all{
-
-        margin-left: 25px;
-        margin-right: 15px;
-    }
-  
 }
