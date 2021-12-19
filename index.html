@@ -23,21 +23,21 @@
         <div class="header-content">
             <ul class="list header-list">
                 <li class="item">
-                    <a href="" class="link">
+                    <a href="" class="link whatsapp-link">
                         <svg class="icon" width="24" height="24">
                             <use href="./img/icons-svg.svg#icon-whatsapp"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="item">
-                    <a href="" class="link">
+                    <a href="" class="link telegram-link">
                         <svg class="icon" width="24" height="24">
                             <use href="./img/icons-svg.svg#icon-telegram"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="item">
-                    <a href="" class="link">
+                    <a href="" class="link viber-link">
                         <svg class="icon" width="24" height="24">
                             <use href="./img/icons-svg.svg#icon-viber"></use>
                         </svg>
@@ -155,51 +155,76 @@
         <section class="section">
             <form action="#" class="project-price-form" method="POST" name="Підрахунок проекту" data-netlify="true" id="project-price-form">
                 
-                <h5 class="project-price-text"> Розрахуй вартість проекту</h5>
+                <p class="text project-price-text"> Розрахуй вартість проекту</p>
 
                 <div class="project-type-conainer">
                     <label for="project-price-form-select" class="project-price-form-file-title"> Тип сайту </label>
 
                     <select name="Project type" id="project-price-form-select" class="select">
-                        <option selected value="landing-page"> Landing page </option>
-                        <option value="online-store"> Online Store </option>
-                        <option value="web-application"> Web Application </option>
-                        <option value="mobile-application"> Mobile Application </option>
+                        <option selected value="landing-page" lang="en"> Landing page </option>
+                        <option value="online-store" lang="en"> Online Store </option>
+                        <option value="web-application" lang="en"> Web Application </option>
+                        <option value="mobile-application" lang="en"> Mobile Application </option>
                     </select>
                 </div>
 
                 <div class="checkbox-box">
-                    <p class="project-price-form-file-title"> Типи роботи </p> 
+                    <p class="text project-price-form-file-title"> Типи роботи </p> 
 
-                    <div class="checkbox-label-project-managment">
-                        <input type="checkbox" name="Project Managment" id="project-managment" class="input-checkbox">
-                        <label for="project-managment"class="label-project-managment"> Project Managment </label>
+                    <div class="typeofwork checkbox-label-project-managment">
+                        <input
+                            type="checkbox" name="Project Managment" id="project-managment" class="input-checkbox"
+                        >
+                        <label for="project-managment"class="label-typeofwork label-project-managment" lang="en"
+                            >Project Managment
+                        </label>
                     </div>
 
-                    <div class="checkbox-label-project-design">
-                        <input type="checkbox" name="Design" id="design" class="input-checkbox">
-                        <label for="design" class="label-design"> Design </label>  
+                    <div class="typeofwork checkbox-label-project-design">
+                        <input
+                            type="checkbox" name="Design" id="design" class="input-checkbox"
+                        >
+                        <label for="design" class="label-typeofwork  label-design" lang="en"
+                            >Design
+                        </label>  
                     </div>
             
-                    <div class="checkbox-label-project-developer">
-                        <input type="checkbox" name="Developer" id="developer" class="input-checkbox">
-                        <label for="developer" class="label-developer"> Developer </label>
+                    <div class="typeofwork checkbox-label-project-developer">
+                        <input
+                            type="checkbox" name="Developer" id="developer" class="input-checkbox"
+                        >
+                        <label for="developer" class="label-typeofwork  label-developer" lang="en"
+                            >Developer
+                        </label>
                     </div>
 
-                    <div class="checkbox-label-project-qa">
-                        <input type="checkbox" name="QA" id="qa" class="input-checkbox">
-                        <label for="qa" class="label-qa"> QA </label>
+                    <div class="typeofwork checkbox-label-project-qa">
+                        <input
+                            type="checkbox" name="QA" id="qa" class="input-checkbox"
+                        >
+                        <label for="qa" class="label-typeofwork label-qa" lang="en"
+                            >QA
+                        </label>
                     </div>
                 </div>
 
-                <p class="price"> Ціна </p>
-                <p class="currency"> <span class="usd"> $ </span> <span id="total-price"> 0</span> </p>
+                <p class=" text price"
+                    >Ціна
+                </p>
 
+                <p class="text currency">
+                    <span class="usd"
+                        >$
+                    </span>
+                    <span id="total-price"
+                        >0
+                    </span>
+                </p>
 
                 <input type="hidden" name="Email">
 
-                <div class="formElemet-container">
-                    <button class="button-send">Відправти <span class="button-send-text"> запит </span> </button>
+                <div class="button-div formElemet-container">
+                    <button class="button-send">Відправти запит</button>
                 </div>
             </form>
         </section>
