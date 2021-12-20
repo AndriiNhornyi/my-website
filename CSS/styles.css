@@ -6,6 +6,7 @@
     --main-colortext-form: #333333;
     --form-colortext: #5F9600;
     --link-accenticon: #ffffff;
+    --iconhover-color: #def3f6;
 }
 
 .head-body{
@@ -56,7 +57,6 @@
     fill: currentColor;
 }
 
-
 /* ________________________HEADER */
 .header-content{
     width: 1200px;
@@ -77,10 +77,9 @@
     color: #7360f2;
 }
 
-
 .header-list .link:hover,
 .header-list .link:focus {
-    color: var(--link-accenticon);
+    color: var(--iconhover-color);
 }
 
 .header-list,
@@ -119,15 +118,22 @@
 
 .fbandin-list .link {
     display: block;
-    border-radius: 50%;
-    padding: 10px;
+    /* border-radius: 50%;
+    padding: 10px; */
 }
 
 .fbandin-list .link:hover,
 .fbandin-list .link:focus {
-    background-color: var(--accent-color);
+    color: var(--link-accenticon);
 }
 
+.linkedin-icon {
+    fill: #0e76a8;
+}
+
+.fbandin-list .icon:hover {
+    fill: var(--iconhover-color);
+}
 
 .fbandin-list .item + .item {
     margin-left: 28px;
